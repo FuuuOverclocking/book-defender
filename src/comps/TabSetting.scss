@@ -1,0 +1,15 @@
+.section>div.setting-two-column {
+    margin-bottom: .8em;
+
+    >*:first-child {
+        display     : flex;
+        width       : 8em;
+        margin-left : 1em;
+        margin-right: 1em;
+    }
+
+    >*:last-child {
+        display: flex;
+        width  : 30em;
+    }
+}

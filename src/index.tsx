@@ -1,17 +1,31 @@
+import './css/reset.scss';
+import './css/global.scss';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { initializeIcons } from '@fluentui/react';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import './use-dark-theme';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+import { repo, resolveRepoToBeOpened } from './repo';
+
+import App from './comps/App';
+import { pica } from './pica';
+
+main();
+async function main() {
+    initializeIcons();
+
+    const repoRoot = resolveRepoToBeOpened();
+    if (repoRoot) {
+        repo.load(repoRoot);
+        await pica.init(repo.config!.pica, repo.config!.picaToken);
+    }
+
+    ReactDOM.render(
+        <React.StrictMode>
+            <App />
+        </React.StrictMode>,
+        document.getElementById('root'),
+    );
+}
