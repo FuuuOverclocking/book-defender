@@ -2620,27 +2620,12 @@ aws4@^1.8.0:
   resolved "https://registry.npm.taobao.org/aws4/download/aws4-1.10.1.tgz?cache=0&sync_timestamp=1597238704875&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Faws4%2Fdownload%2Faws4-1.10.1.tgz#e1e82e4f3e999e2cfd61b161280d16a111f86428"
   integrity sha1-4eguTz6Zniz9YbFhKA0WoRH4ZCg=
 
-axios-socks5-agent@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npm.taobao.org/axios-socks5-agent/download/axios-socks5-agent-1.0.1.tgz#6fec7e667191515230de0abd180a17af9460e73a"
-  integrity sha1-b+x+ZnGRUVIw3gq9GAoXr5Rg5zo=
-  dependencies:
-    socks5-http-client "^1.0.4"
-    socks5-https-client "^1.2.1"
-
 axios@^0.19.2:
   version "0.19.2"
   resolved "https://registry.npm.taobao.org/axios/download/axios-0.19.2.tgz?cache=0&sync_timestamp=1597979584536&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Faxios%2Fdownload%2Faxios-0.19.2.tgz#3ea36c5d8818d0d5f8a8a97a6d36b86cdc00cb27"
   integrity sha1-PqNsXYgY0NX4qKl6bTa4bNwAyyc=
   dependencies:
     follow-redirects "1.5.10"
-
-axios@^0.20.0:
-  version "0.20.0"
-  resolved "https://registry.npm.taobao.org/axios/download/axios-0.20.0.tgz?cache=0&sync_timestamp=1597979584536&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Faxios%2Fdownload%2Faxios-0.20.0.tgz#057ba30f04884694993a8cd07fa394cff11c50bd"
-  integrity sha1-BXujDwSIRpSZOozQf6OUz/EcUL0=
-  dependencies:
-    follow-redirects "^1.10.0"
 
 axobject-query@^2.0.2:
   version "2.2.0"
@@ -5507,7 +5492,7 @@ follow-redirects@1.5.10:
   dependencies:
     debug "=3.1.0"
 
-follow-redirects@^1.0.0, follow-redirects@^1.10.0:
+follow-redirects@^1.0.0:
   version "1.13.0"
   resolved "https://registry.npm.taobao.org/follow-redirects/download/follow-redirects-1.13.0.tgz?cache=0&sync_timestamp=1597057976909&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffollow-redirects%2Fdownload%2Ffollow-redirects-1.13.0.tgz#b42e8d93a2a7eea5ed88633676d6597bc8e384db"
   integrity sha1-tC6Nk6Kn7qXtiGM2dtZZe8jjhNs=
@@ -6429,15 +6414,6 @@ invariant@^2.2.2, invariant@^2.2.4:
   dependencies:
     loose-envify "^1.0.0"
 
-ip-address@~6.1.0:
-  version "6.1.0"
-  resolved "https://registry.npm.taobao.org/ip-address/download/ip-address-6.1.0.tgz#3c3335bc90f22b3545a6eca5bffefabeb2ea6fd2"
-  integrity sha1-PDM1vJDyKzVFpuylv/76vrLqb9I=
-  dependencies:
-    jsbn "1.1.0"
-    lodash "^4.17.15"
-    sprintf-js "1.1.2"
-
 ip-regex@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npm.taobao.org/ip-regex/download/ip-regex-2.1.0.tgz#fa78bf5d2e6913c911ce9f819ee5146bb6d844e9"
@@ -7316,11 +7292,6 @@ js-yaml@^3.13.1, js-yaml@^3.14.0:
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
-
-jsbn@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/jsbn/download/jsbn-1.1.0.tgz#b01307cb29b618a1ed26ec79e911f803c4da0040"
-  integrity sha1-sBMHyym2GKHtJux56RH4A8TaAEA=
 
 jsbn@~0.1.0:
   version "0.1.1"
@@ -11013,27 +10984,6 @@ sockjs@0.3.20:
     uuid "^3.4.0"
     websocket-driver "0.6.5"
 
-socks5-client@~1.2.3, socks5-client@~1.2.6:
-  version "1.2.8"
-  resolved "https://registry.npm.taobao.org/socks5-client/download/socks5-client-1.2.8.tgz#6470e4d781de254ee9f3b5ec9760a44c5df898da"
-  integrity sha1-ZHDk14HeJU7p87Xsl2CkTF34mNo=
-  dependencies:
-    ip-address "~6.1.0"
-
-socks5-http-client@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.npm.taobao.org/socks5-http-client/download/socks5-http-client-1.0.4.tgz#cfaaa993f91df58542806b458372c6fb3c1a32bd"
-  integrity sha1-z6qpk/kd9YVCgGtFg3LG+zwaMr0=
-  dependencies:
-    socks5-client "~1.2.6"
-
-socks5-https-client@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.npm.taobao.org/socks5-https-client/download/socks5-https-client-1.2.1.tgz#c8d4a000e39cdc1651d90245af04a735d75d8b09"
-  integrity sha1-yNSgAOOc3BZR2QJFrwSnNdddiwk=
-  dependencies:
-    socks5-client "~1.2.3"
-
 sort-keys@^1.0.0:
   version "1.1.2"
   resolved "https://registry.npm.taobao.org/sort-keys/download/sort-keys-1.1.2.tgz#441b6d4d346798f1b4e49e8920adfba0e543f9ad"
@@ -11156,7 +11106,7 @@ split-string@^3.0.1, split-string@^3.0.2:
   dependencies:
     extend-shallow "^3.0.0"
 
-sprintf-js@1.1.2, sprintf-js@^1.1.2:
+sprintf-js@^1.1.2:
   version "1.1.2"
   resolved "https://registry.npm.taobao.org/sprintf-js/download/sprintf-js-1.1.2.tgz#da1765262bf8c0f571749f2ad6c26300207ae673"
   integrity sha1-2hdlJiv4wPVxdJ8q1sJjACB65nM=
